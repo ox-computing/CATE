@@ -38,8 +38,6 @@ These files should be provided for every topology to be evaluated. The topology 
 3. Run the Heuristic script to get the number of links to shut down per interval of time. You will be prompted to enter the topology name. The command to run is: python3 scratch/CATE/FullSimulation/Heuristic/HeuristicTest.py and then insert the topology name all in uppercase, example: "GEANT".
 4. Run the second approach that corresponds to CATE. The scenario number for this approach is 20 by default. The scenario number if used later to facilitate plotting graphs. You need to specify the topology and the season in the command line as well as the directory. The command to run is for example: ./ns3 run "scratch/CATE/FullSimulation/LinkShutDown/FullSimulationP.cc --Topology=GEANT --Season=winter --Directory=/home/username/"
 
-## License
-
 
 ## Citation
 When referencing this work, please use the following citation:
