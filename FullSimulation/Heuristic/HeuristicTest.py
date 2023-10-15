@@ -115,7 +115,7 @@ MaxRate = [100000000, 100000000, 100000000]
 Utilization = [1000, 1000, 1000]
 ZeroLinks = [1000, 1000, 1000]
 Number_Links_Enb = [0, 0 ,0]
-f = open(directory + "ns-allinone-3.36.1/ns-3.36.1/scratch/" + Topology + "Files/PortConf"+ str(PowerSetup) +".txt", "w")
+f = open(directory + "ns-allinone-3.36.1/ns-3.36.1/scratch/CATE/" + Topology + "Files/PortConf"+ str(PowerSetup) +".txt", "w")
 
 FlowsAvg = 0
 for Hour in SelectedN:
