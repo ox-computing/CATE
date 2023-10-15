@@ -21,7 +21,7 @@ else:
 	totLinks = 68
 
 data = []
-with open("/home/sawsan/ns-allinone-3.36.1/ns-3.36.1/scratch/project-carbon-aware-routing-sim/"+ str(Topology) +"Files/Results/DelayValues" + str(Pattern)+ str(Season) + str(Scenario) + ".txt", "r") as file:
+with open("/home/sawsan/ns-allinone-3.36.1/ns-3.36.1/scratch/CATE/"+ str(Topology) +"Files/Results/DelayValues" + str(Pattern)+ str(Season) + str(Scenario) + ".txt", "r") as file:
 	lines_list = file.readlines()
 for line in lines_list[0:]:
 	data.append([float(val) for val in line.split()][0])
