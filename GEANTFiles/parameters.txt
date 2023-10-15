@@ -1,0 +1,16 @@
+Pattern = random
+NodeHierarchyLevels = 1
+Sec_per_Interval = 0.1
+Number_of_Intervals = 9
+rate_max = 45
+nb_Applications = 2
+SimStart = 1
+CustomPacketSize = 6500
+offset = 0.86
+PortPower = 4.5
+StaticPower = 41
+ERating = 10
+TypPower = 187
+lamda = 0.0015
+DPRating = 15
+MaxRateST = 550 //maximum overall throughput at peak rate in Gbps
