@@ -25,7 +25,7 @@ CopyLinks = []
 # Get the forecast of carbon intensity per country or region
 Forecast = []
 
-with open(directory + "ns-allinone-3.36.1/ns-3.36.1/scratch/"+ Topology +"Files/"+ Season +".txt", "r") as file:
+with open(directory + "ns-allinone-3.36.1/ns-3.36.1/scratch/CATE/"+ Topology +"Files/"+ Season +".txt", "r") as file:
 	lines_list = file.readlines()
 for line in lines_list[0:]:
 	Forecast.append([float(val) for val in line.split()])
