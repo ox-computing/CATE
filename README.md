@@ -24,7 +24,7 @@ The "FullSimulation" folder includes:
 4. "FormatResults.py" script: used to format the results after running a simulation.
 5. "CarbonEnergyFigures.py" script: used to plot the figures for the resulting carbon and energy savings for every scenario.
 6. "CDFFigures.py" script: used to plot the CDF figures for the delay and the hop count for every scenario.
-7. "PlotFig1_2_8.py" script: used to plot the national and regional carbon intensity figures (figures 1 and 2 in the paper) as well as the overall rate plot of BT (figure 8 in the paper).
+7. "PlotFig1_2_8.py" script: used to plot the national and regional carbon intensity figures (figures 1 and 2 in the paper) as well as the overall rate of BT (figure 8 in the paper).
 
 Every topology file (i.e. "GEANTFiles") includes:
 1. A topology file in the INET format: "Topology.txt".
