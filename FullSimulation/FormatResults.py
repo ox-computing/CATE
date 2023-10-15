@@ -58,7 +58,7 @@ plt.figure()
 
 # Get the cdf of hop count values:
 data = []
-with open("/home/sawsan/ns-allinone-3.36.1/ns-3.36.1/scratch/project-carbon-aware-routing-sim/"+ str(Topology) +"Files/Results/HopCountValues" + str(Pattern) + str(Season) + str(Scenario) + ".txt", "r") as file:
+with open("/home/sawsan/ns-allinone-3.36.1/ns-3.36.1/scratch/CATE/"+ str(Topology) +"Files/Results/HopCountValues" + str(Pattern) + str(Season) + str(Scenario) + ".txt", "r") as file:
 	lines_list = file.readlines()
 for line in lines_list[0:]:
 	data.append([float(val) for val in line.split()][0])
@@ -94,7 +94,7 @@ plt.title('CDF of Hop Count')
 #plt.show()
 
 
-with open("/home/sawsan/ns-allinone-3.36.1/ns-3.36.1/scratch/project-carbon-aware-routing-sim/"+ str(Topology) +"Files/Results/CDF" + str(Pattern)+ str(Season) + str(Scenario) + ".csv", 'w', encoding='UTF8') as f:
+with open("/home/sawsan/ns-allinone-3.36.1/ns-3.36.1/scratch/CATE/"+ str(Topology) +"Files/Results/CDF" + str(Pattern)+ str(Season) + str(Scenario) + ".csv", 'w', encoding='UTF8') as f:
     writer = csv.writer(f)
     writer.writerow(NewXd)
     writer.writerow(NewYd)
