@@ -50,7 +50,7 @@ London = []
 
 directory = input("Enter the ns-3 directory: (/home/username/) ")
 
-with open(directory + "ns-allinone-3.36.1/ns-3.36.1/scratch/project-carbon-aware-routing-sim/BTFiles/fall (copy).txt", "r") as file:
+with open(directory + "ns-allinone-3.36.1/ns-3.36.1/scratch/project-carbon-aware-routing-sim/BTFiles/fallInit.txt", "r") as file:
 	lines_list = file.readlines()
 	for line in lines_list[0:]:
 		Scotland.append([float(val) for val in line.split()][0])
