@@ -8,11 +8,11 @@ import csv
 M = 500
 Scenario = input("Enter Scenario: ")
 Topology = input("Enter Topology: (BT/GEANT)")
-Pattern = input("Enter Pattern: (random/downstreaming)")
+Pattern = input("Enter Pattern: (random/downstreaming/mixed)")
 Season = input("Enter Season: (fall/winter/spring/summer)")
 #totIntervals = input("Enter Number of Intervals: ")
 #totIntervals = int(totIntervals)
-# season = input("Enter Season (fall/winter/spring/summer/summerSpecial): ")
+# season = input("Enter Season (fall/winter/spring/summer): ")
 if Topology == "BT":
 	totNodes = 1008
 	totLinks = 3111
