@@ -10,7 +10,7 @@ The following steps are needed to run this code:
 
 1. Install the ns-3 simulator. The version used in this project is 3.36.1. The following YouTube video is an easy tutorial for installing ns3 in Ubuntu: https://www.youtube.com/watch?v=3lWeCGPiWWM. Configure ns-3 into optimized mode.
 2. Clone this repository under the directory ~/ns-allinone-3.36.1/ns-3.36.1/scratch.
-3. Make sure to have these python libraries installed: seaborn, matplotlib, csv and pandas.
+3. Make sure to have these python packages installed: seaborn, matplotlib, csv and pandas.
 
 ## Structure
 The repository is strutured as follows:
