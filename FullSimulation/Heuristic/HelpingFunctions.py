@@ -22,7 +22,7 @@ def GraphTopology(directory, filename, Forecast, OSPF, FlagNode, ratio, ProcPowe
 	AllLinks = []
 	NodeLSize = []
 	
-	with open(directory + "ns-allinone-3.36.1/ns-3.36.1/scratch/CATE/"+ filename +"Files/" + filename + ".txt", "r") as file:
+	with open(directory + "ns-allinone-3.36.1/ns-3.36.1/scratch/CATE/"+ filename +"Files/Topology.txt", "r") as file:
 		lines_list = file.readlines()
 	
 	for line in lines_list[0:]:
