@@ -25,7 +25,7 @@ double Interval_Adjustment = Sec_per_Interval; // to map every second of simulat
 double Rscale = 1; // For reduced simulation time
 double rate_max = 35/Rscale; //this rate will be multipied by a normalized mean at every interval
 int nb_Applications = 5; // Number of parallel flows between a pair of nodes // Multiple smaller flows rather than a big flow that is not transmitted because of RTT limitations in TCP
-int SimStart = 0;
+double SimStart = 0;
 int forcedStDWN = 0;
 int CustomPacketSize = 1500; // 64 KB = 65535 bits is the maximum value
 double offset = 0.95; 
