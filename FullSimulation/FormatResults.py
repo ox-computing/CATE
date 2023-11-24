@@ -20,8 +20,10 @@ else:
 	totNodes = 46
 	totLinks = 68
 
+Directory = input("Enter the directory of ns-3: (/home/username/) ")
+
 data = []
-with open("/home/sawsan/ns-allinone-3.36.1/ns-3.36.1/scratch/CATE/"+ str(Topology) +"Files/Results/DelayValues" + str(Pattern)+ str(Season) + str(Scenario) + ".txt", "r") as file:
+with open(Directory + "ns-allinone-3.36.1/ns-3.36.1/scratch/CATE/"+ str(Topology) +"Files/Results/DelayValues" + str(Pattern)+ str(Season) + str(Scenario) + ".txt", "r") as file:
 	lines_list = file.readlines()
 for line in lines_list[0:]:
 	data.append([float(val) for val in line.split()][0])
