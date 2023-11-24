@@ -96,7 +96,7 @@ plt.title('CDF of Hop Count')
 #plt.show()
 
 
-with open("/home/sawsan/ns-allinone-3.36.1/ns-3.36.1/scratch/CATE/"+ str(Topology) +"Files/Results/CDF" + str(Pattern)+ str(Season) + str(Scenario) + ".csv", 'w', encoding='UTF8') as f:
+with open(Directory + "ns-allinone-3.36.1/ns-3.36.1/scratch/CATE/"+ str(Topology) +"Files/Results/CDF" + str(Pattern)+ str(Season) + str(Scenario) + ".csv", 'w', encoding='UTF8') as f:
     writer = csv.writer(f)
     writer.writerow(NewXd)
     writer.writerow(NewYd)
