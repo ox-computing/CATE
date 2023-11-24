@@ -10,6 +10,7 @@ The following steps are needed to run this code:
 
 1. Install the ns-3 simulator. The version used in this project is 3.36.1. The following YouTube video is an easy tutorial for installing ns3 in Ubuntu: https://www.youtube.com/watch?v=3lWeCGPiWWM. Configure ns-3 into optimized mode.
 2. Clone this repository under the directory ~/ns-allinone-3.36.1/ns-3.36.1/scratch.
+3. Make sure to have these python libraries installed: seaborn, matplotlib, csv and pandas.
 
 ## Structure
 The repository is strutured as follows:
@@ -35,9 +36,10 @@ These files should be provided for every topology to be evaluated. The topology 
 
 ## Usage
 1. Fill the parameters in the topology file.
+Note: In case of limitations on the memory available, you can reduce the time of the simulation by changing the parameters file: reduce Sec_per_Interval to 0.001, SimStart to 0.1 and offset to 0.086. This will affect the accuracy of the results but can be tuned according to your system limitations.
 2. Run the first approach while varying the scenario, the mapping of scenarios is as follows: 1 = OSPF, 2 = Incremental dynamic power per unit traffic only, 3 = Carbon Intensity only, 4 = Carbon Intensity + Incremental dynamic power per unit traffic, 5 = Typical Power + Carbon Intensity, 6 = Energy Labelling + Carbon Intensity, 7 = Typical Power only, 8 = Energy Labelling only, 9 = Carbon Emissions. You need to specify the topology, the season and the scenario when running the code. Moreover, you need to specify the directory at which you installed ns-3, mainly "/home/username/". You can change it in the code or give it as an input argument. The command to run is for example: ./ns3 run "scratch/CATE/FullSimulation/NoShutDown/FullSimulation.cc --Topology=GEANT --Season=winter --Scenario=4 --Directory=/home/username/"
 3. Run the Heuristic script to get the number of links to shut down per interval of time. You will be prompted to enter the topology name. The command to run is: python3 scratch/CATE/FullSimulation/Heuristic/HeuristicTest.py and then insert the topology name all in uppercase, example: "GEANT".
-4. Run the second approach that corresponds to CATE. The scenario number for this approach is 20 by default. The scenario number if used later to facilitate plotting graphs. You need to specify the topology and the season in the command line as well as the directory. The command to run is for example: ./ns3 run "scratch/CATE/FullSimulation/LinkShutDown/FullSimulationP.cc --Topology=GEANT --Season=winter --Directory=/home/username/"
+4. Run the second approach that corresponds to CATE. The scenario number for this approach is 20 by default. The scenario number is used later to facilitate plotting graphs. You need to specify the topology and the season in the command line as well as the directory. The command to run is for example: ./ns3 run "scratch/CATE/FullSimulation/LinkShutDown/FullSimulationP.cc --Topology=GEANT --Season=winter --Directory=/home/username/"
 
 
 ## Citation
