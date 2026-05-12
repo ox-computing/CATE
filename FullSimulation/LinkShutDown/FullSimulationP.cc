@@ -22,6 +22,7 @@ bool Simplified = false;
 double Sec_per_Interval = 0.1; // number of seconds to consider per interval
 int Number_of_Intervals = 9; 
 double Interval_Adjustment = Sec_per_Interval; // to map every second of simulation to the interval
+double SimTimeSec = 10;
 double Rscale = 1; // For reduced simulation time
 double rate_max = 35/Rscale; //this rate will be multipied by a normalized mean at every interval
 int nb_Applications = 5; // Number of parallel flows between a pair of nodes // Multiple smaller flows rather than a big flow that is not transmitted because of RTT limitations in TCP
@@ -1246,7 +1247,7 @@ int main (int argc, char *argv[])
   
   std::cout << "Pattern = " << Pattern << std::endl;
   
-  double SimTimeSec = SimStart + Sec_per_Interval * Number_of_Intervals; // in Seconds.
+  SimTimeSec = SimStart + Sec_per_Interval * Number_of_Intervals; // in Seconds.
   std::cout << "Simulation Time = " << SimTimeSec << std::endl;
   double ExtraTimeSec = 0; // can add for sink app and the overall simulation but carefull with indices
   
