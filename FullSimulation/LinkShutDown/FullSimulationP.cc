@@ -268,7 +268,8 @@ MyApp::StartApplication (void)
   m_socket->Bind ();
   m_socket->Connect (m_peer);
   ChangeDataRate();
-  if(Pattern == "random"){
+  //if(Pattern != "random"){
+  if(m_endTime == SimTimeSec){
   	for (int s = 1; s < m_Number_of_Intervals; s++){ 
   		m_changeRate = Simulator::Schedule (Seconds (SimStart-m_startTime + s * Interval_Adjustment), &MyApp::ChangeDataRate, this);
   	}
